@@ -1,5 +1,5 @@
 """
-Program perulangan membaca buku
+Program perulangan membaca buku - for
 """
 
 jumlah_buku = 10
