@@ -1,5 +1,5 @@
 """
-Fungsi for loop
+Fungsi for loops
 """
 
 for i in range(1, 4+1):
