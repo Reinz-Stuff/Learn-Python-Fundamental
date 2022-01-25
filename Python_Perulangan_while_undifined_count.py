@@ -2,19 +2,24 @@
 Program perulangan membaca buku - while undifined count
 """
 
-jumlah_buku = 10
-jumlah_buku_yang_sudah_dibaca_dan_dipahami = 0
-total_jumlah_baca = 0
+total_books = 10
+understood_books = 0
+total_read = 0
 
 print('Ibu berkata,"Bacalah semua bukumu sampai paham."')
-print(f"Jumlah buku yang sudah dibaca {jumlah_buku_yang_sudah_dibaca_dan_dipahami} ")
+print(f"Jumlah buku yang sudah dibaca {understood_books} ")
 
-while total_jumlah_baca < jumlah_buku * 2:
-    total_jumlah_baca = total_jumlah_baca + 1
-    if jumlah_buku_yang_sudah_dibaca_dan_dipahami == 9:
-        print(f'Buku ke {jumlah_buku_yang_sudah_dibaca_dan_dipahami+1} belum paham')
+while total_read < total_books * 2:
+    total_read = total_read + 1
+    if understood_books == 9:
+        print(f'Buku ke {understood_books + 1} belum paham')
     else:
-        jumlah_buku_yang_sudah_dibaca_dan_dipahami = jumlah_buku_yang_sudah_dibaca_dan_dipahami +1
-        print(f'Buku ke {jumlah_buku_yang_sudah_dibaca_dan_dipahami} sudah dipahami')
+        understood_books = understood_books + 1
+        print(f'Buku ke {understood_books} sudah dipahami')
 
-print(f"Jumlah buku yang sudah dibaca dan dipahami {jumlah_buku_yang_sudah_dibaca_dan_dipahami}")
+print(f"Jumlah buku yang sudah dibaca dan dipahami {understood_books}")
+
+if understood_books == total_books:
+    print('Budi  lapor pada ibu,"Bu semua buku sudah dibaca dan dipahami."')
+else:
+    print('Budi  lapor pada ibu,"Bu tidak semua buku bisa dipahami."')
