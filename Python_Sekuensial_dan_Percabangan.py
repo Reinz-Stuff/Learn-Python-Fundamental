@@ -15,26 +15,26 @@ print('Dan mulai berbelanja')
 
 # Percabangan
 
-jumlah_botol_susu = 0
-jumlah_telur = 3
+total_milk = 0
+total_eggs = 3
 
-print(f"jumlah botol susu {jumlah_botol_susu} botol")
-print(f"jumlah telur {jumlah_telur} butir")
+print(f"jumlah botol susu {total_milk} botol")
+print(f"jumlah telur {total_eggs} butir")
 
-if jumlah_botol_susu == 0:
-    if jumlah_telur == 0:
+if total_milk == 0:
+    if total_eggs == 0:
         print(f'Budi tidak jadi membeli botol susu dan telur')
-    elif jumlah_telur <= 6:
-        print(f'Budi hanya membeli {jumlah_telur} butir telur')
+    elif total_eggs <= 6:
+        print(f'Budi hanya membeli {total_eggs} butir telur')
     else :
         print('Budi hanya membeli 6 butir telur')
 
-elif jumlah_botol_susu > 0:
+elif total_milk > 0:
     print('Budi mengecek harganya,dan uangnya cukup')
-    if jumlah_telur == 0:
+    if total_eggs == 0:
         print("Budi hanya membeli 1 botol susu")
-    elif jumlah_telur <= 6:
-        print(f'Budi membeli 1 botol susu dan {jumlah_telur} butir telur')
+    elif total_eggs <= 6:
+        print(f'Budi membeli 1 botol susu dan {total_eggs} butir telur')
     else :
         print('Budi membeli 1 botol susu dan 6 butir telur')
 
