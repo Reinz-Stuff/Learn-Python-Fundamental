@@ -1,3 +1,4 @@
+# Type data list
 daftar_anime = ['Overlord', 'Kingdom', 'Oregairu', 'One Puch Man']
 
 print('Tampilkan semua variable daftar anime')
