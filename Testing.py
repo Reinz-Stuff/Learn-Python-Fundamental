@@ -1,25 +1,11 @@
-"""
-Fungsi for loops
-"""
-
-for i in range(1, 4+1):
-    print(i)
-
 matrix = [1, 2, 3, 4]
 
 for i in matrix:
     print(i)
-print()
 
-"""
-Fungsi while loop
-"""
+print(matrix[0] - matrix[3])
 
-i=0
-l=5
-
-while i < 5:
-    i=i+1
+matrix.clear()
+for i in matrix:
     print(i)
-
-    test 2
+print(matrix[0] - matrix[3])
