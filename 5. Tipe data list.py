@@ -29,7 +29,7 @@ daftar_anime.append('Code Geass')
 for i in range(0, len(daftar_anime)):
     print(daftar_anime[i])
 
-print('\nMenghapus data pada list')
+print('\nMenghapus data pada list dengan clear')
 daftar_anime.clear()
 for i in range(0, len(daftar_anime)):
     print(daftar_anime[i])
@@ -48,5 +48,10 @@ for i in range(0, len(daftar_anime)):
 
 print('\nElemen yang diambil tadi')
 print(buku)
-
 #Pop tanpa angka maka diambil dari ujung, jika angka negatif dihitung dari ujung
+
+print('\nMenghapus Elemen dengan perintah del')
+daftar_anime = ['Overlord', 'Kingdom', 'Oregairu', 'One Puch Man']
+del daftar_anime[0]
+for i in range(0, len(daftar_anime)):
+    print(daftar_anime[i])

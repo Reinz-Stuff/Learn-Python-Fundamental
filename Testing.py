@@ -1,11 +1,4 @@
-matrix = [1, 2, 3, 4]
-
-for i in matrix:
-    print(i)
-
-print(matrix[0] - matrix[3])
-
-matrix.clear()
-for i in matrix:
-    print(i)
-print(matrix[0] - matrix[3])
+daftar = 1, 2, 3, 4
+del(daftar[0])
+for i in range(0, len(daftar)):
+    print(daftar[i])
