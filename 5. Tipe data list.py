@@ -50,26 +50,3 @@ print('\nElemen yang diambil tadi')
 print(buku)
 #Pop tanpa angka maka diambil dari ujung, jika angka negatif dihitung dari ujung
 
-print('\nPerintah del')
-daftar_anime = ['Overlord', 'Kingdom', 'Oregairu', 'One Puch Man']
-del daftar_anime[0]
-for i in range(0, len(daftar_anime)):
-    print(daftar_anime[i])
-
-print('\nPerintah del dengan list comprehension')
-daftar_anime = ['Overlord', 'Kingdom', 'Oregairu', 'One Puch Man']
-del daftar_anime[:]
-for i in range(0, len(daftar_anime)):
-    print(daftar_anime[i])
-
-print('\nPerintah del dengan list comprehension start')
-daftar_anime = ['Overlord', 'Kingdom', 'Oregairu', 'One Puch Man']
-del daftar_anime[0:-2]  # [START:END]
-for i in range(0, len(daftar_anime)):
-    print(daftar_anime[i])
-
-print('\nPerintah del dengan list comprehension step')
-daftar_anime = ['Overlord', 'Kingdom', 'Oregairu', 'One Puch Man']
-del daftar_anime[0::2]  # [START:END:STEP]
-for i in range(0, len(daftar_anime)):
-    print(daftar_anime[i])
