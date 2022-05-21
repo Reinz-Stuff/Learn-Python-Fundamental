@@ -10,7 +10,7 @@ print('Ibu berkata,"Bacalah semua bukumu sampai paham."')
 print(f"Jumlah buku yang sudah dibaca {understood_books} ")
 
 while total_read < total_books * 2:
-    total_read = total_read + 1
+    total_read += 1
     if understood_books == 9:
         print(f'Buku ke {understood_books + 1} belum paham')
     else:
