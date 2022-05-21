@@ -24,3 +24,16 @@ print(users["address"])
 print(users["address"]['street'])
 print(users["address"]['geo'])
 print(users["address"]['geo']['lat'])
+
+print(users)
+print(type(users))
+
+print('Ubah Dict ke json')
+# dumps = ubah ke string, dump = ubah ke file
+import json
+result = json.dumps(users)
+print(result)
+print(type(result))
+
+with open('result.json', 'w') as file:
+    json.dump(users, file)
