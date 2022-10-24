@@ -1,15 +1,19 @@
-daftar_list = [1, 2, 3, 4, 5]
+users = {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Brett",
+    "email": "sincere@april.biz",  # email : key, tidak boleh angka harus string
+    "address": {
+        "street": "Kulas Light",
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "zipcode": "92998-3874",
+        "geo": {
+            "lat": "-37.3159",
+            "lng": "81.1496"
+        }
 
-daftar_list_baru = daftar_list[2::-2]
+    }
+}
 
-print('Daftar list awal')
-for i in range(0, len(daftar_list)):
-    print(daftar_list[i])
-
-del daftar_list[:]
-
-print('Nilai daftar list baru & Hapus daftar list')
-for i in range(0, len(daftar_list_baru)):
-    print(daftar_list_baru[i])
-
-print(daftar_list)
+print(users)
