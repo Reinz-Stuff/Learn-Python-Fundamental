@@ -24,6 +24,7 @@ for i in range(0, len(daftar_anime)):
 
 print('\n6.Memambahkan data pada list')
 daftar_anime = ['Overlord', 'Kingdom', 'Oregairu', 'One Puch Man']
+print('Teambahkan data pada list')
 daftar_anime.append('Code Geass')
 for i in range(0, len(daftar_anime)):
     print(daftar_anime[i])
@@ -60,4 +61,3 @@ daftar_anime = ['Overlord', 'Kingdom', 'Oregairu', 'One Puch Man']
 buku = daftar_anime.pop(-2)
 for i in range(0, len(daftar_anime)):
     print(daftar_anime[i])
-
