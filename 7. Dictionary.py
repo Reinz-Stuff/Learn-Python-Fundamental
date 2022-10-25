@@ -16,6 +16,7 @@ users = {
 
     }
 }
+
 print(users)
 print(users["name"])
 print(users["username"])
@@ -28,8 +29,13 @@ print(users["address"]['geo']['lat'])
 print(users)
 print(type(users))
 
+# Diatas merupakan Dictonary dan bukan JSON meskipun tampilan sama, untuk merubah dictionary ke JSON maka harus
+# menggunakan package bawaan python yg bernama "JSON" dan harus dipanggil dahulu menggunakan perintah import
+
 print('Ubah Dict ke json')
-# dumps = ubah ke string, dump = ubah ke file
+
+# dumps = mengubah dictionary menjadi string JSON, dump = mengubah dictonary menjadi file JSON
+
 import json
 result = json.dumps(users)
 print(result)
@@ -37,3 +43,5 @@ print(type(result))
 
 with open('result.json', 'w') as file:
     json.dump(users, file)
+
+# Code -> Reformat code, agar tampilan sama
